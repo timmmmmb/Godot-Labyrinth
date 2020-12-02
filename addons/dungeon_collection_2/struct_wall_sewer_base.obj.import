@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/struct_wall_sewer_base.obj-8a1bb13cea26b6d263bf83d51d930486.mesh"
+
+[deps]
+
+files=[ "res://.import/struct_wall_sewer_base.obj-8a1bb13cea26b6d263bf83d51d930486.mesh" ]
+
+source_file="res://addons/dungeon_collection_2/struct_wall_sewer_base.obj"
+dest_files=[ "res://.import/struct_wall_sewer_base.obj-8a1bb13cea26b6d263bf83d51d930486.mesh", "res://.import/struct_wall_sewer_base.obj-8a1bb13cea26b6d263bf83d51d930486.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

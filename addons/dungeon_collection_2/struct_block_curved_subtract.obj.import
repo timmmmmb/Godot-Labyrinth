@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/struct_block_curved_subtract.obj-9d2d3b91d842953fde29df20b4317deb.mesh"
+
+[deps]
+
+files=[ "res://.import/struct_block_curved_subtract.obj-9d2d3b91d842953fde29df20b4317deb.mesh" ]
+
+source_file="res://addons/dungeon_collection_2/struct_block_curved_subtract.obj"
+dest_files=[ "res://.import/struct_block_curved_subtract.obj-9d2d3b91d842953fde29df20b4317deb.mesh", "res://.import/struct_block_curved_subtract.obj-9d2d3b91d842953fde29df20b4317deb.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

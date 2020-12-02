@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Floor_Curved_Outer_Half.obj-692e9630b1cf9674933d4950594ee37c.mesh"
+
+[deps]
+
+files=[ "res://.import/Floor_Curved_Outer_Half.obj-692e9630b1cf9674933d4950594ee37c.mesh" ]
+
+source_file="res://addons/dungeon_collection_1/Floor_Curved_Outer_Half.obj"
+dest_files=[ "res://.import/Floor_Curved_Outer_Half.obj-692e9630b1cf9674933d4950594ee37c.mesh", "res://.import/Floor_Curved_Outer_Half.obj-692e9630b1cf9674933d4950594ee37c.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

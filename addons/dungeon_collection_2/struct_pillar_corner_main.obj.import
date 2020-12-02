@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/struct_pillar_corner_main.obj-3c55fabaef6f4353df4b2f4c18ed65b0.mesh"
+
+[deps]
+
+files=[ "res://.import/struct_pillar_corner_main.obj-3c55fabaef6f4353df4b2f4c18ed65b0.mesh" ]
+
+source_file="res://addons/dungeon_collection_2/struct_pillar_corner_main.obj"
+dest_files=[ "res://.import/struct_pillar_corner_main.obj-3c55fabaef6f4353df4b2f4c18ed65b0.mesh", "res://.import/struct_pillar_corner_main.obj-3c55fabaef6f4353df4b2f4c18ed65b0.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

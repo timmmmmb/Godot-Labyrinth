@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Wall_Base_Straight.obj-d82caf67d8819182d536daf7b51d7e17.mesh"
+
+[deps]
+
+files=[ "res://.import/Wall_Base_Straight.obj-d82caf67d8819182d536daf7b51d7e17.mesh" ]
+
+source_file="res://addons/dungeon_collection_1/Wall_Base_Straight.obj"
+dest_files=[ "res://.import/Wall_Base_Straight.obj-d82caf67d8819182d536daf7b51d7e17.mesh", "res://.import/Wall_Base_Straight.obj-d82caf67d8819182d536daf7b51d7e17.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Floor_Square_Full.obj-1f4ac2a41f458841ecce5e81548ad902.mesh"
+
+[deps]
+
+files=[ "res://.import/Floor_Square_Full.obj-1f4ac2a41f458841ecce5e81548ad902.mesh" ]
+
+source_file="res://addons/dungeon_collection_1/Floor_Square_Full.obj"
+dest_files=[ "res://.import/Floor_Square_Full.obj-1f4ac2a41f458841ecce5e81548ad902.mesh", "res://.import/Floor_Square_Full.obj-1f4ac2a41f458841ecce5e81548ad902.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

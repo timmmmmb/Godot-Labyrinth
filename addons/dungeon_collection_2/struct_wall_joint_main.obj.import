@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/struct_wall_joint_main.obj-da6bed348738ac8e41a98c4360504243.mesh"
+
+[deps]
+
+files=[ "res://.import/struct_wall_joint_main.obj-da6bed348738ac8e41a98c4360504243.mesh" ]
+
+source_file="res://addons/dungeon_collection_2/struct_wall_joint_main.obj"
+dest_files=[ "res://.import/struct_wall_joint_main.obj-da6bed348738ac8e41a98c4360504243.mesh", "res://.import/struct_wall_joint_main.obj-da6bed348738ac8e41a98c4360504243.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

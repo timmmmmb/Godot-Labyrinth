@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Gateway_Large.obj-a650cc3466a03812681115777d347d8b.mesh"
+
+[deps]
+
+files=[ "res://.import/Gateway_Large.obj-a650cc3466a03812681115777d347d8b.mesh" ]
+
+source_file="res://addons/dungeon_collection_1/Gateway_Large.obj"
+dest_files=[ "res://.import/Gateway_Large.obj-a650cc3466a03812681115777d347d8b.mesh", "res://.import/Gateway_Large.obj-a650cc3466a03812681115777d347d8b.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

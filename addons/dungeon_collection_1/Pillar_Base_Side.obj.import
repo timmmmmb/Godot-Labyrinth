@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Pillar_Base_Side.obj-d186afbbd99558196e03bd1992d840fa.mesh"
+
+[deps]
+
+files=[ "res://.import/Pillar_Base_Side.obj-d186afbbd99558196e03bd1992d840fa.mesh" ]
+
+source_file="res://addons/dungeon_collection_1/Pillar_Base_Side.obj"
+dest_files=[ "res://.import/Pillar_Base_Side.obj-d186afbbd99558196e03bd1992d840fa.mesh", "res://.import/Pillar_Base_Side.obj-d186afbbd99558196e03bd1992d840fa.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

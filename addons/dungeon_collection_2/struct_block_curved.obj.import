@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/struct_block_curved.obj-15e40a25011ca0dafa9b783a9d71ec5f.mesh"
+
+[deps]
+
+files=[ "res://.import/struct_block_curved.obj-15e40a25011ca0dafa9b783a9d71ec5f.mesh" ]
+
+source_file="res://addons/dungeon_collection_2/struct_block_curved.obj"
+dest_files=[ "res://.import/struct_block_curved.obj-15e40a25011ca0dafa9b783a9d71ec5f.mesh", "res://.import/struct_block_curved.obj-15e40a25011ca0dafa9b783a9d71ec5f.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Floor_Tapered_Outer_Full.obj-bc36e1dc30115f40f6abe65b80f3938f.mesh"
+
+[deps]
+
+files=[ "res://.import/Floor_Tapered_Outer_Full.obj-bc36e1dc30115f40f6abe65b80f3938f.mesh" ]
+
+source_file="res://addons/dungeon_collection_1/Floor_Tapered_Outer_Full.obj"
+dest_files=[ "res://.import/Floor_Tapered_Outer_Full.obj-bc36e1dc30115f40f6abe65b80f3938f.mesh", "res://.import/Floor_Tapered_Outer_Full.obj-bc36e1dc30115f40f6abe65b80f3938f.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

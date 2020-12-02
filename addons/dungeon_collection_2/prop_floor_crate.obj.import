@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/prop_floor_crate.obj-1beb600f8f64b89481ddf024d37afe79.mesh"
+
+[deps]
+
+files=[ "res://.import/prop_floor_crate.obj-1beb600f8f64b89481ddf024d37afe79.mesh" ]
+
+source_file="res://addons/dungeon_collection_2/prop_floor_crate.obj"
+dest_files=[ "res://.import/prop_floor_crate.obj-1beb600f8f64b89481ddf024d37afe79.mesh", "res://.import/prop_floor_crate.obj-1beb600f8f64b89481ddf024d37afe79.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

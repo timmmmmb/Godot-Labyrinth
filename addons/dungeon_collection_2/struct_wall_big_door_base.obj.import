@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/struct_wall_big_door_base.obj-c0876835955a2b2915294f3f2a820b39.mesh"
+
+[deps]
+
+files=[ "res://.import/struct_wall_big_door_base.obj-c0876835955a2b2915294f3f2a820b39.mesh" ]
+
+source_file="res://addons/dungeon_collection_2/struct_wall_big_door_base.obj"
+dest_files=[ "res://.import/struct_wall_big_door_base.obj-c0876835955a2b2915294f3f2a820b39.mesh", "res://.import/struct_wall_big_door_base.obj-c0876835955a2b2915294f3f2a820b39.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
