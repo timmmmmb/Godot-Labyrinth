@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=2]
+
+[sub_resource type="CapsuleShape" id=1]
+
+[node name="Spatial" type="Node"]
+
+[node name="Spatial" type="Spatial" parent="."]
+
+[node name="Player" type="KinematicBody" parent="Spatial"]
+
+[node name="CollisionShape" type="CollisionShape" parent="Spatial/Player"]
+visible = false
+shape = SubResource( 1 )

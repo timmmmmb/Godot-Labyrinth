@@ -1,0 +1,141 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://addons/dungeon_collection_2/struct_wall_cell_door_base.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://addons/dungeon_collection_2/struct_wall_cell_door_main.obj" type="ArrayMesh" id=2]
+[ext_resource path="res://addons/dungeon_collection_2/struct_wall_big_door_topper.obj" type="ArrayMesh" id=3]
+[ext_resource path="res://addons/dungeon_collection_2/struct_wall_big_door_upper.obj" type="ArrayMesh" id=4]
+[ext_resource path="res://addons/dungeon_collection_1/Wall_Cell_Door.obj" type="ArrayMesh" id=5]
+[ext_resource path="res://addons/dungeon_collection_2/prop_wall_door_cell.obj" type="ArrayMesh" id=6]
+[ext_resource path="res://addons/dungeon_collection_1/Wall_Cell_Doorframe.obj" type="ArrayMesh" id=7]
+[ext_resource path="res://addons/dungeon_collection_2/struct_wall_big_door_top.obj" type="ArrayMesh" id=8]
+[ext_resource path="res://addons/dungeon_collection_2/struct_wall_big_door_base.obj" type="ArrayMesh" id=9]
+[ext_resource path="res://addons/dungeon_collection_2/prop_wall_big_door_wood.obj" type="ArrayMesh" id=10]
+[ext_resource path="res://addons/dungeon_collection_2/struct_wall_big_door_lower.obj" type="ArrayMesh" id=11]
+[ext_resource path="res://addons/dungeon_collection_2/prop_wall_big_door_iron.obj" type="ArrayMesh" id=12]
+
+[node name="Spatial" type="Spatial"]
+
+[node name="Door" type="Spatial" parent="."]
+
+[node name="Wall_Cell_Door" type="MeshInstance" parent="Door"]
+mesh = ExtResource( 5 )
+material/0 = null
+material/1 = null
+
+[node name="Wall_Cell_Doorframe" type="MeshInstance" parent="Door"]
+mesh = ExtResource( 7 )
+material/0 = null
+material/1 = null
+
+[node name="BigDoorIron" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0 )
+
+[node name="prop_wall_big_door_iron" type="MeshInstance" parent="BigDoorIron"]
+mesh = ExtResource( 12 )
+material/0 = null
+
+[node name="struct_wall_big_door_base" type="MeshInstance" parent="BigDoorIron"]
+mesh = ExtResource( 9 )
+material/0 = null
+material/1 = null
+
+[node name="struct_wall_big_door_lower" type="MeshInstance" parent="BigDoorIron"]
+mesh = ExtResource( 11 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+
+[node name="struct_wall_big_door_top" type="MeshInstance" parent="BigDoorIron"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
+mesh = ExtResource( 8 )
+material/0 = null
+material/1 = null
+
+[node name="struct_wall_big_door_topper" type="MeshInstance" parent="BigDoorIron"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
+mesh = ExtResource( 3 )
+material/0 = null
+material/1 = null
+
+[node name="struct_wall_big_door_upper" type="MeshInstance" parent="BigDoorIron"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
+mesh = ExtResource( 4 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+
+[node name="BigDoorWood" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 0 )
+
+[node name="prop_wall_big_door_wood" type="MeshInstance" parent="BigDoorWood"]
+mesh = ExtResource( 10 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+
+[node name="struct_wall_big_door_base" type="MeshInstance" parent="BigDoorWood"]
+mesh = ExtResource( 9 )
+material/0 = null
+material/1 = null
+
+[node name="struct_wall_big_door_lower" type="MeshInstance" parent="BigDoorWood"]
+mesh = ExtResource( 11 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+material/7 = null
+
+[node name="struct_wall_big_door_top" type="MeshInstance" parent="BigDoorWood"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
+mesh = ExtResource( 8 )
+material/0 = null
+material/1 = null
+
+[node name="struct_wall_big_door_topper" type="MeshInstance" parent="BigDoorWood"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
+mesh = ExtResource( 3 )
+material/0 = null
+material/1 = null
+
+[node name="struct_wall_big_door_upper" type="MeshInstance" parent="BigDoorWood"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
+mesh = ExtResource( 4 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+material/4 = null
+material/5 = null
+material/6 = null
+
+[node name="CellDoor" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 0 )
+
+[node name="prop_wall_door_cell" type="MeshInstance" parent="CellDoor"]
+mesh = ExtResource( 6 )
+material/0 = null
+
+[node name="struct_wall_cell_door_base" type="MeshInstance" parent="CellDoor"]
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+
+[node name="struct_wall_cell_door_main" type="MeshInstance" parent="CellDoor"]
+mesh = ExtResource( 2 )
+material/0 = null
