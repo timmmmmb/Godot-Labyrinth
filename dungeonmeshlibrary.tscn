@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://addons/dungeon_collection_2/struct_wall_straight_main.obj" type="ArrayMesh" id=58]
+[ext_resource path="res://addons/dungeon_collection_2/struct_floor_normal.obj" type="ArrayMesh" id=72]
+[ext_resource path="res://addons/dungeon_collection_2/struct_wall_joint_main.obj" type="ArrayMesh" id=89]
+
+[sub_resource type="ConcavePolygonShape" id=5]
+data = PoolVector3Array( 0.5, 0, -0.5, -0.5, 0, -0.5, -0.5, -0.2, -0.5, 0.5, -0.2, -0.5, 0.5, 0, -0.5, -0.5, -0.2, -0.5, -0.5, 0, 0.5, -0.5, 0, -0.5, 0.5, 0, 0.5, 0.5, 0, 0.5, -0.5, 0, -0.5, 0.5, 0, -0.5, -0.5, 0, 0.5, 0.5, 0, 0.5, 0.5, -0.2, 0.5, -0.5, -0.2, 0.5, -0.5, 0, 0.5, 0.5, -0.2, 0.5, -0.5, 0, -0.5, -0.5, 0, 0.5, -0.5, -0.2, 0.5, -0.5, -0.2, -0.5, -0.5, 0, -0.5, -0.5, -0.2, 0.5, 0.5, -0.2, 0.5, 0.5, -0.2, -0.5, -0.5, -0.2, -0.5, -0.5, -0.2, 0.5, 0.5, -0.2, 0.5, -0.5, -0.2, -0.5, 0.5, 0, 0.5, 0.5, 0, -0.5, 0.5, -0.2, -0.5, 0.5, -0.2, 0.5, 0.5, 0, 0.5, 0.5, -0.2, -0.5 )
+
+[sub_resource type="ConcavePolygonShape" id=2]
+data = PoolVector3Array( -0.5, 1, -0.35, -0.5, 0, -0.35, -0.5, 0, -0.65, -0.5, 1, -0.65, -0.5, 1, -0.35, -0.5, 0, -0.65, -0.5, 1, -0.35, 0.5, 1, -0.35, 0.5, 0, -0.35, -0.5, 0, -0.35, -0.5, 1, -0.35, 0.5, 0, -0.35, 0.5, 1, -0.65, 0.5, 0, -0.65, 0.5, 0, -0.35, 0.5, 1, -0.35, 0.5, 1, -0.65, 0.5, 0, -0.35, -0.5, 0, -0.35, 0.5, 0, -0.35, 0.5, 0, -0.65, -0.5, 0, -0.65, -0.5, 0, -0.35, 0.5, 0, -0.65, -0.5, 0, -0.65, 0.5, 0, -0.65, 0.5, 1, -0.65, -0.5, 1, -0.65, -0.5, 0, -0.65, 0.5, 1, -0.65, -0.5, 1, -0.65, 0.5, 1, -0.65, 0.5, 1, -0.35, -0.5, 1, -0.35, -0.5, 1, -0.65, 0.5, 1, -0.35 )
+
+[sub_resource type="ConcavePolygonShape" id=3]
+data = PoolVector3Array( 0.4379, 1, -0.35, 0.35, 1, -0.4379, 0.5, 1, -0.35, 0.5, 1, -0.5, 0.5, 1, -0.35, 0.35, 1, -0.4379, 0.35, 1, -0.5, 0.5, 1, -0.5, 0.35, 1, -0.4379, 0.5, 1, -0.35, 0.5, 0, -0.35, 0.4379, 0, -0.35, 0.4379, 1, -0.35, 0.5, 1, -0.35, 0.4379, 0, -0.35, 0.4379, 0, -0.35, 0.5, 0, -0.35, 0.35, 0, -0.4379, 0.35, 0, -0.5, 0.35, 0, -0.4379, 0.5, 0, -0.5, 0.5, 0, -0.5, 0.35, 0, -0.4379, 0.5, 0, -0.35, 0.4379, 1, -0.35, 0.4379, 0, -0.35, 0.35, 0, -0.4379, 0.35, 1, -0.4379, 0.4379, 1, -0.35, 0.35, 0, -0.4379, 0.35, 1, -0.4379, 0.35, 0, -0.4379, 0.35, 0, -0.5, 0.35, 1, -0.5, 0.35, 1, -0.4379, 0.35, 0, -0.5, 0.35, 1, -0.5, 0.35, 0, -0.5, 0.5, 0, -0.5, 0.5, 1, -0.5, 0.35, 1, -0.5, 0.5, 0, -0.5, 0.5, 1, -0.5, 0.5, 0, -0.5, 0.5, 0, -0.35, 0.5, 1, -0.35, 0.5, 1, -0.5, 0.5, 0, -0.35 )
+
+[node name="Spatial" type="Spatial"]
+
+[node name="struct_floor_normal" type="MeshInstance" parent="."]
+mesh = ExtResource( 72 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="struct_floor_normal"]
+
+[node name="CollisionShape" type="CollisionShape" parent="struct_floor_normal/StaticBody"]
+shape = SubResource( 5 )
+
+[node name="struct_wall_straight_main" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0 )
+mesh = ExtResource( 58 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="struct_wall_straight_main"]
+
+[node name="CollisionShape" type="CollisionShape" parent="struct_wall_straight_main/StaticBody"]
+shape = SubResource( 2 )
+
+[node name="struct_wall_joint_main" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2, 0, 0 )
+mesh = ExtResource( 89 )
+material/0 = null
+
+[node name="StaticBody" type="StaticBody" parent="struct_wall_joint_main"]
+
+[node name="CollisionShape" type="CollisionShape" parent="struct_wall_joint_main/StaticBody"]
+shape = SubResource( 3 )

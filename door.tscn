@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://addons/dungeon_collection_2/struct_wall_cell_door_base.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://addons/dungeon_collection_2/struct_wall_cell_door_main.obj" type="ArrayMesh" id=2]
+[ext_resource path="res://addons/dungeon_collection_2/prop_wall_door_cell.obj" type="ArrayMesh" id=3]
+
+[node name="door" type="Spatial"]
+
+[node name="prop_wall_door_cell" type="MeshInstance" parent="."]
+mesh = ExtResource( 3 )
+material/0 = null
+
+[node name="struct_wall_cell_door_base" type="MeshInstance" parent="."]
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+
+[node name="struct_wall_cell_door_main" type="MeshInstance" parent="."]
+mesh = ExtResource( 2 )
+material/0 = null
