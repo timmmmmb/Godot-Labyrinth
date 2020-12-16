@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Path.gd" type="Script" id=1]
+
+[node name="Path" type="Spatial"]
+script = ExtResource( 1 )
+
+[node name="WP1" type="Position3D" parent="."]
+transform = Transform( 0.999912, 0.0132641, 0, -0.0132641, 0.999912, 0, 0, 0, 1, 0.0412537, 0.0853076, 0 )
+
+[node name="WP2" type="Position3D" parent="."]
+transform = Transform( 0.999912, 0.0132641, 0, -0.0132641, 0.999912, 0, 0, 0, 1, 1.42706, 0.0853076, 0 )
+
+[node name="WP3" type="Position3D" parent="."]
+transform = Transform( 0.999912, 0.0132641, 0, -0.0132641, 0.999912, 0, 0, 0, 1, 0.689146, 0.0853076, -2.74159 )
+
+[node name="WP4" type="Position3D" parent="."]
+transform = Transform( 0.999912, 0.0132641, 0, -0.0132641, 0.999912, 0, 0, 0, 1, -1.94939, 0.0853076, -2.11093 )
+
+[node name="WP5" type="Position3D" parent="."]
+transform = Transform( 0.999912, 0.0132641, 0, -0.0132641, 0.999912, 0, 0, 0, 1, -2.33098, 0.0853076, 1.45647 )
