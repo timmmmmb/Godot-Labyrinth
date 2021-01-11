@@ -1,0 +1,190 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://LabyrintSets/struct_floor_normal.tscn" type="PackedScene" id=1]
+[ext_resource path="res://LabyrintSets/struct_wall.tscn" type="PackedScene" id=2]
+[ext_resource path="res://LabyrintSets/struct_joint.tscn" type="PackedScene" id=3]
+
+[node name="Room 6x6_" type="Spatial"]
+
+[node name="Floor" type="Spatial" parent="."]
+
+[node name="struct_floor_normal2" parent="Floor" instance=ExtResource( 1 )]
+
+[node name="struct_floor_normal3" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.5 )
+
+[node name="struct_floor_normal4" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, 0.5 )
+
+[node name="struct_floor_normal7" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, -0.5 )
+
+[node name="struct_floor_normal6" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, -0.5 )
+
+[node name="struct_floor_normal5" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, -0.5 )
+
+[node name="struct_floor_normal13" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, -1.5 )
+
+[node name="struct_floor_normal12" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, -1.5 )
+
+[node name="struct_floor_normal11" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, -1.5 )
+
+[node name="struct_floor_normal10" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, -2.5 )
+
+[node name="struct_floor_normal9" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, -2.5 )
+
+[node name="struct_floor_normal8" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, -2.5 )
+
+[node name="struct_floor_normal19" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, -3.5 )
+
+[node name="struct_floor_normal18" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, -3.5 )
+
+[node name="struct_floor_normal17" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, -3.5 )
+
+[node name="struct_floor_normal16" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, -4.5 )
+
+[node name="struct_floor_normal15" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, -4.5 )
+
+[node name="struct_floor_normal14" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, -4.5 )
+
+[node name="struct_floor_normal37" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 0, 0.5 )
+
+[node name="struct_floor_normal36" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0, 0.5 )
+
+[node name="struct_floor_normal35" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0, 0.5 )
+
+[node name="struct_floor_normal34" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 0, -0.5 )
+
+[node name="struct_floor_normal33" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0, -0.5 )
+
+[node name="struct_floor_normal32" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0, -0.5 )
+
+[node name="struct_floor_normal31" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 0, -1.5 )
+
+[node name="struct_floor_normal30" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0, -1.5 )
+
+[node name="struct_floor_normal29" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0, -1.5 )
+
+[node name="struct_floor_normal28" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 0, -2.5 )
+
+[node name="struct_floor_normal27" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0, -2.5 )
+
+[node name="struct_floor_normal26" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0, -2.5 )
+
+[node name="struct_floor_normal25" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 0, -3.5 )
+
+[node name="struct_floor_normal24" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0, -3.5 )
+
+[node name="struct_floor_normal23" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0, -3.5 )
+
+[node name="struct_floor_normal22" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 0, -4.5 )
+
+[node name="struct_floor_normal21" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0, -4.5 )
+
+[node name="struct_floor_normal20" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0, -4.5 )
+
+[node name="Wall" type="Spatial" parent="."]
+
+[node name="struct_wall3" parent="Wall" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2 )
+
+[node name="struct_wall4" parent="Wall" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 2 )
+
+[node name="struct_wall14" parent="Wall" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, 2 )
+
+[node name="struct_wall13" parent="Wall" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, 2 )
+
+[node name="struct_wall18" parent="Wall" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4 )
+
+[node name="struct_wall17" parent="Wall" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -4 )
+
+[node name="struct_wall16" parent="Wall" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -4 )
+
+[node name="struct_wall15" parent="Wall" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -4 )
+
+[node name="struct_wall5" parent="Wall" instance=ExtResource( 2 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3, 0, 1 )
+
+[node name="struct_wall6" parent="Wall" instance=ExtResource( 2 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3, 0, 0 )
+
+[node name="struct_wall7" parent="Wall" instance=ExtResource( 2 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3, 0, -3 )
+
+[node name="struct_wall8" parent="Wall" instance=ExtResource( 2 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 3, 0, -4 )
+
+[node name="struct_wall12" parent="Wall" instance=ExtResource( 2 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3, 0, 1 )
+
+[node name="struct_wall11" parent="Wall" instance=ExtResource( 2 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3, 0, 2.62268e-07 )
+
+[node name="struct_wall10" parent="Wall" instance=ExtResource( 2 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3, 0, -3 )
+
+[node name="struct_wall9" parent="Wall" instance=ExtResource( 2 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3, 0, -4 )
+
+[node name="struct_joint" parent="Wall" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4, 0, -1 )
+
+[node name="struct_joint2" parent="Wall" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -3 )
+
+[node name="struct_joint6" parent="Wall" instance=ExtResource( 3 )]
+transform = Transform( 7.54979e-08, 0, -1, 0, 1, 0, 1, 0, 7.54979e-08, -8.74228e-08, 0, -5 )
+
+[node name="struct_joint5" parent="Wall" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -5 )
+
+[node name="struct_joint8" parent="Wall" instance=ExtResource( 3 )]
+transform = Transform( -1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, 3.65565e-07, 0, 1 )
+
+[node name="struct_joint7" parent="Wall" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -2, 0, 1 )
+
+[node name="struct_joint4" parent="Wall" instance=ExtResource( 3 )]
+transform = Transform( -1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, 2, 0, -1 )
+
+[node name="struct_joint3" parent="Wall" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 2, 0, -3 )

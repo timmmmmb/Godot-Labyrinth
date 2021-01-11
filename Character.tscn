@@ -252,6 +252,7 @@ transform = Transform( -1, 0, -8.74228e-08, -5.02649e-08, 0.818179, 0.574964, 7.
 environment = SubResource( 1 )
 current = true
 script = ExtResource( 2 )
+height = 1.2
 
 [node name="lp_guy_mesh" parent="lp_guy/Skeleton" index="0"]
 material/0 = ExtResource( 3 )
@@ -276,12 +277,6 @@ data = {
 "position": Vector2( 356, 93 ),
 "type": "output"
 }, {
-"filter": [  ],
-"from": "Run-loop",
-"id": "Run",
-"position": Vector2( 53, 168 ),
-"type": "animation"
-}, {
 "blend": 0.0,
 "filter": [  ],
 "id": "Idle_Run",
@@ -292,6 +287,12 @@ data = {
 "filter": [  ],
 "id": "Idle",
 "position": Vector2( 50, 50 ),
+"type": "animation"
+}, {
+"filter": [  ],
+"from": "Run-loop",
+"id": "Run",
+"position": Vector2( 53, 168 ),
 "type": "animation"
 } ]
 }
