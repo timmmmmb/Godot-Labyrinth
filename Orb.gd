@@ -15,9 +15,5 @@ func _ready():
 
 
 func _on_Area_body_entered(body):
-	var layer_name = ProjectSettings.get_setting(
-		str("layer_names/3d_physics/layer_", body.get_collision_layer()))
-		
-	if layer_name == "Player":
-		emit_signal("orb_collected")
-		queue_free()
+	emit_signal("orb_collected")
+	queue_free()

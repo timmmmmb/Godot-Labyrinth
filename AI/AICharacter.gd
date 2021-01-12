@@ -5,11 +5,13 @@ onready var nav = get_parent()
 
 onready var timer = $Timer
 
-export var waypoints_path = NodePath()
+export(NodePath) var waypoints_path
 
 export var patrolSpeed = 2.0
 export var chaseSpeed = 4.0
 export var max_speed = 4.0
+
+signal player_caught
 
 enum {
 	IDLE,
@@ -54,7 +56,7 @@ func sense():
 	pass
 
 func patrol():
-	if get_global_transform().origin.distance_to(target_point) < 2:
+	if get_global_transform().origin.distance_to(target_point) < 1:
 		target_point = waypoints.get_next()
 		set_path_to(target_point)
 	move_on_path(patrolSpeed)
@@ -74,7 +76,12 @@ func move_on_path(speed):
 	current_speed = speed
 	if path_node < path.size():
 		var direction = (path[path_node] - get_global_transform().origin)
-		if direction.length() < 1:
+		if state == CHASE:
+			print(path_node)
+			print(str("Path: ", path[path_node], "Self: ", get_global_transform().origin))
+			print(direction)
+			print(direction.length())
+		if direction.length() < .5:
 			path_node += 1
 		else:
 			look_at(path[path_node], Vector3.UP)
@@ -82,6 +89,7 @@ func move_on_path(speed):
 			move_and_slide(direction.normalized() * speed, Vector3.UP)
 
 func set_path_to(point):
+	#var closest_point = nav.get_closest_point(point)
 	path = nav.get_simple_path(get_global_transform().origin, point)
 	path_node = 0
 	
@@ -100,3 +108,7 @@ func _on_Timer_timeout():
 		wait_time = wait_time - timer.wait_time
 	if state == CHASE:	
 		set_path_to(target.get_global_transform().origin)
+
+
+func _on_CatchArea_body_entered(body):
+	emit_signal("player_caught")

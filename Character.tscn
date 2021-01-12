@@ -254,7 +254,6 @@ transform = Transform( -1, 0, -8.74228e-08, -5.02649e-08, 0.818179, 0.574964, 7.
 environment = SubResource( 1 )
 current = true
 script = ExtResource( 2 )
-distance = 2.0
 height = 1.0
 
 [node name="lp_guy_mesh" parent="lp_guy/Skeleton" index="0"]
