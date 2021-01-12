@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://LabyrintSets/struct_floor_normal.tscn" type="PackedScene" id=1]
+[ext_resource path="res://LabyrintSets/struct_wall.tscn" type="PackedScene" id=2]
+
+[node name="Corridor End 2x1_" type="Spatial"]
+
+[node name="Floor" type="Spatial" parent="."]
+
+[node name="struct_floor_normal2" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.5 )
+
+[node name="struct_floor_normal3" parent="Floor" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, -0.5 )
+
+[node name="Wall" type="Spatial" parent="."]
+
+[node name="struct_wall8" parent="Wall" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
+
+[node name="struct_wall4" parent="Wall" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2 )
+
+[node name="struct_wall5" parent="Wall" instance=ExtResource( 2 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2, 0, 1 )
+
+[node name="struct_wall6" parent="Wall" instance=ExtResource( 2 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2, 0, 4.37114e-08 )
