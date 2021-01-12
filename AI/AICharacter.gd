@@ -11,6 +11,12 @@ export var patrolSpeed = 2.0
 export var chaseSpeed = 4.0
 export var maxSpeed = 4.0
 
+enum {
+	IDLE,
+	PATROL,
+	CHASE
+}
+
 var currentSpeed = 0.0
 
 var target_point = null
@@ -18,9 +24,11 @@ var target_point = null
 var path = []
 var path_node = 0
 
-var state = "Idle"
+var state = IDLE
 var target = null
+var wait_after_target_lost = 3
 var wait_time = 0
+
 
 
 func _ready():	
@@ -32,11 +40,11 @@ func _physics_process(delta):
 	sense()
 	
 	match state:
-		"Patrol":
+		PATROL:
 			patrol()
-		"Chase":
+		CHASE:
 			chase()
-		"Idle":
+		IDLE:
 			idle()
 	
 	var s = currentSpeed * 1.0 / maxSpeed
@@ -57,8 +65,8 @@ func chase():
 		
 	
 func idle():
-	if waittime <= 0:
-		state = "Patrol"
+	if wait_time <= 0:
+		state = PATROL
 
 func move_on_path(speed):
 	currentSpeed = speed
@@ -80,7 +88,7 @@ func _on_Area_body_entered(body):
 		str("layer_names/3d_physics/layer_", body.get_collision_layer()))
 	
 	if layer_name == "Player":
-		state = "Chase"
+		state = CHASE
 		target = body
 		set_path_to(target.get_global_transform().origin)
 
@@ -89,12 +97,13 @@ func _on_Area_body_exited(body):
 		str("layer_names/3d_physics/layer_", body.get_collision_layer()))
 	
 	if layer_name == "Player":
-		state = "Idle"
+		state = IDLE
 		target = null
+		wait_time = wait_after_target_lost
 
 
 func _on_Timer_timeout():
-	if state == "Idle":
+	if state == IDLE:
 		wait_time = wait_time - timer.wait_time
-	if state == "Chase":		
+	if state == CHASE:		
 		set_path_to(target.get_global_transform().origin)

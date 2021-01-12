@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Godot-Labyrinth"
-run/main_scene="res://GameScene.tscn"
+run/main_scene="res://AI/AIScene.tscn"
 config/icon="res://icon.png"
 
 [layer_names]
