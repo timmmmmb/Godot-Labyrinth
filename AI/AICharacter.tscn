@@ -257,10 +257,6 @@ transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0 )
 input_ray_pickable = false
 collision_mask = 2
 script = ExtResource( 1 )
-waypoints_path = null
-patrolSpeed = null
-chaseSpeed = null
-max_speed = null
 
 [node name="lp_guy_mesh" parent="lp_guy/Skeleton" index="0"]
 material/0 = SubResource( 1 )
