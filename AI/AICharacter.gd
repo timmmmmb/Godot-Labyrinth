@@ -12,6 +12,8 @@ export var chaseSpeed = 4.0
 export var max_speed = 4.0
 
 signal player_caught
+onready var footstep = $Footstep
+var footstep_on = false
 
 enum {
 	IDLE,
@@ -87,6 +89,9 @@ func move_on_path(speed):
 			look_at(path[path_node], Vector3.UP)
 			rotate_object_local(Vector3(0,1,0), PI)
 			move_and_slide(direction.normalized() * speed, Vector3.UP)
+			if !footstep_on:
+				footstep.play()
+				footstep_on = true
 
 func set_path_to(point):
 	#var closest_point = nav.get_closest_point(point)
@@ -110,5 +115,9 @@ func _on_Timer_timeout():
 		set_path_to(target.get_global_transform().origin)
 
 
+
 func _on_CatchArea_body_entered(body):
 	emit_signal("player_caught")
+
+func _on_Footstep_finished():
+	footstep_on = false
