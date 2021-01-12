@@ -34,8 +34,7 @@ func _physics_process(delta):
 			chase()
 		"Idle":
 			idle()
-	
-	print(currentSpeed)
+			
 	get_node("AnimationTreePlayer").blend2_node_set_amount("Idle_Run", currentSpeed)
 	
 func sense():
