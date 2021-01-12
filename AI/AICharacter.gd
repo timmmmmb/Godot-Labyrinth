@@ -57,7 +57,6 @@ func patrol():
 	if get_global_transform().origin.distance_to(target_point) < 2:
 		target_point = waypoints.get_next()
 		set_path_to(target_point)
-	
 	move_on_path(patrolSpeed)
 			
 func chase():
@@ -68,6 +67,8 @@ func idle():
 	current_speed = 0
 	if wait_time <= 0:
 		state = PATROL
+		target_point = waypoints.get_next()
+		set_path_to(target_point)
 
 func move_on_path(speed):
 	current_speed = speed
@@ -78,7 +79,6 @@ func move_on_path(speed):
 		else:
 			look_at(path[path_node], Vector3.UP)
 			rotate_object_local(Vector3(0,1,0), PI)
-			print(direction.normalized())
 			move_and_slide(direction.normalized() * speed, Vector3.UP)
 
 func set_path_to(point):
