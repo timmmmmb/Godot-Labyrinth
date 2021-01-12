@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://AI/AICharacter.tscn" type="PackedScene" id=1]
+[ext_resource path="res://AI/Path.tscn" type="PackedScene" id=2]
+
+[node name="Set" type="Node"]
+
+[node name="Character" parent="." instance=ExtResource( 1 )]
+waypoints_path = NodePath("../../Set/Path")
+
+[node name="Path" parent="." instance=ExtResource( 2 )]
+
+[editable path="Path"]

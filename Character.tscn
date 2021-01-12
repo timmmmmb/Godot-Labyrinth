@@ -242,6 +242,8 @@ height = 1.20355
 
 [node name="Character" instance=ExtResource( 1 )]
 input_ray_pickable = false
+collision_layer = 2
+collision_mask = 5
 script = ExtResource( 5 )
 
 [node name="target" type="Spatial" parent="." index="0"]
@@ -252,6 +254,8 @@ transform = Transform( -1, 0, -8.74228e-08, -5.02649e-08, 0.818179, 0.574964, 7.
 environment = SubResource( 1 )
 current = true
 script = ExtResource( 2 )
+distance = 2.0
+height = 1.0
 
 [node name="lp_guy_mesh" parent="lp_guy/Skeleton" index="0"]
 material/0 = ExtResource( 3 )
@@ -276,16 +280,16 @@ data = {
 "position": Vector2( 356, 93 ),
 "type": "output"
 }, {
-"animation": ExtResource( 4 ),
-"filter": [  ],
-"id": "Idle",
-"position": Vector2( 50, 53 ),
-"type": "animation"
-}, {
 "filter": [  ],
 "from": "Run-loop",
 "id": "Run",
 "position": Vector2( 53, 168 ),
+"type": "animation"
+}, {
+"animation": ExtResource( 4 ),
+"filter": [  ],
+"id": "Idle",
+"position": Vector2( 50, 53 ),
 "type": "animation"
 }, {
 "blend": 0.0,
@@ -295,3 +299,7 @@ data = {
 "type": "blend2"
 } ]
 }
+
+[node name="Timer" type="Timer" parent="." index="5"]
+wait_time = 0.1
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

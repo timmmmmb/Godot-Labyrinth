@@ -9,7 +9,7 @@ export var waypoints_path = NodePath()
 
 export var patrolSpeed = 2.0
 export var chaseSpeed = 4.0
-export var maxSpeed = 4.0
+export var max_speed = 4.0
 
 enum {
 	IDLE,
@@ -17,7 +17,7 @@ enum {
 	CHASE
 }
 
-var currentSpeed = 0.0
+var current_speed = 0.0
 
 var target_point = null
 
@@ -34,11 +34,11 @@ var wait_time = 0
 func _ready():	
 	target_point = waypoints.get_start()
 	set_path_to(target_point)
+	timer.start()
 	
 func _physics_process(delta):
 	
 	sense()
-	
 	match state:
 		PATROL:
 			patrol()
@@ -47,7 +47,7 @@ func _physics_process(delta):
 		IDLE:
 			idle()
 	
-	var s = currentSpeed * 1.0 / maxSpeed
+	var s = current_speed * 1.0 / max_speed
 	get_node("AnimationTreePlayer").blend2_node_set_amount("Idle_Run", s)
 	
 func sense():
@@ -65,11 +65,12 @@ func chase():
 		
 	
 func idle():
+	current_speed = 0
 	if wait_time <= 0:
 		state = PATROL
 
 func move_on_path(speed):
-	currentSpeed = speed
+	current_speed = speed
 	if path_node < path.size():
 		var direction = (path[path_node] - get_global_transform().origin)
 		if direction.length() < 1:
@@ -77,6 +78,7 @@ func move_on_path(speed):
 		else:
 			look_at(path[path_node], Vector3.UP)
 			rotate_object_local(Vector3(0,1,0), PI)
+			print(direction.normalized())
 			move_and_slide(direction.normalized() * speed, Vector3.UP)
 
 func set_path_to(point):
@@ -84,26 +86,17 @@ func set_path_to(point):
 	path_node = 0
 	
 func _on_Area_body_entered(body):
-	var layer_name = ProjectSettings.get_setting(
-		str("layer_names/3d_physics/layer_", body.get_collision_layer()))
-	
-	if layer_name == "Player":
-		state = CHASE
-		target = body
-		set_path_to(target.get_global_transform().origin)
+	state = CHASE
+	target = body
+	set_path_to(target.get_global_transform().origin)
 
 func _on_Area_body_exited(body):
-	var layer_name = ProjectSettings.get_setting(
-		str("layer_names/3d_physics/layer_", body.get_collision_layer()))
-	
-	if layer_name == "Player":
-		state = IDLE
-		target = null
-		wait_time = wait_after_target_lost
-
+	state = IDLE
+	target = null
+	wait_time = wait_after_target_lost
 
 func _on_Timer_timeout():
 	if state == IDLE:
 		wait_time = wait_time - timer.wait_time
-	if state == CHASE:		
+	if state == CHASE:	
 		set_path_to(target.get_global_transform().origin)

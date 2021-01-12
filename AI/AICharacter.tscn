@@ -248,9 +248,9 @@ height = 1.20355
 [sub_resource type="BoxShape" id=4]
 extents = Vector3( 2.0691, 0.637618, 4.3982 )
 
-[node name="Character" instance=ExtResource( 3 )]
+[node name="AICharacter" instance=ExtResource( 3 )]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0 )
 input_ray_pickable = false
-collision_layer = 7
 collision_mask = 2
 script = ExtResource( 1 )
 
@@ -298,7 +298,7 @@ data = {
 }
 
 [node name="Timer" type="Timer" parent="." index="4"]
-wait_time = 0.15
+wait_time = 0.05
 
 [node name="Area" type="Area" parent="." index="5"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.548517 )
