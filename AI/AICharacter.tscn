@@ -287,17 +287,17 @@ data = {
 "position": Vector2( 53, 168 ),
 "type": "animation"
 }, {
-"blend": 0.0,
-"filter": [  ],
-"id": "Idle_Run",
-"position": Vector2( 213, 83 ),
-"type": "blend2"
-}, {
 "animation": ExtResource( 4 ),
 "filter": [  ],
 "id": "Idle",
 "position": Vector2( 50, 53 ),
 "type": "animation"
+}, {
+"blend": 0.0,
+"filter": [  ],
+"id": "Idle_Run",
+"position": Vector2( 213, 83 ),
+"type": "blend2"
 } ]
 }
 
@@ -323,6 +323,7 @@ shape = SubResource( 5 )
 
 [node name="Footstep" type="AudioStreamPlayer3D" parent="." index="7"]
 stream = ExtResource( 5 )
+unit_db = 3.0
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 [connection signal="body_entered" from="Vision" to="." method="_on_Area_body_entered"]
 [connection signal="body_exited" from="Vision" to="." method="_on_Area_body_exited"]

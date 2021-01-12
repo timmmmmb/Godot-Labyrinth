@@ -55,17 +55,17 @@ data = {
 "position": Vector2( 53, 168 ),
 "type": "animation"
 }, {
-"blend": 0.0,
-"filter": [  ],
-"id": "Idle_Run",
-"position": Vector2( 213, 83 ),
-"type": "blend2"
-}, {
 "animation": ExtResource( 12 ),
 "filter": [  ],
 "id": "Idle",
 "position": Vector2( 50, 53 ),
 "type": "animation"
+}, {
+"blend": 0.0,
+"filter": [  ],
+"id": "Idle_Run",
+"position": Vector2( 213, 83 ),
+"type": "blend2"
 } ]
 }
 
@@ -207,6 +207,39 @@ transform = Transform( 1.94707e-07, 0, -1, 0, 1, 0, 1, 0, 1.94707e-07, 12, 0, 13
 transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 11.9786, 0, -8.86647 )
 waypoints_path = NodePath("../Path1")
 
+[node name="AnimationTreePlayer" parent="Navigation/Enemy1" index="3"]
+data = {
+"active": true,
+"connections": [ "Idle_Run", "out", 0, "Idle", "Idle_Run", 0, "Run", "Idle_Run", 1 ],
+"master": NodePath("../AnimationPlayer"),
+"nodes": [ {
+"id": "out",
+"position": Vector2( 356, 93 ),
+"type": "output"
+}, {
+"filter": [  ],
+"from": "Run-loop",
+"id": "Run",
+"position": Vector2( 53, 168 ),
+"type": "animation"
+}, {
+"animation": ExtResource( 12 ),
+"filter": [  ],
+"id": "Idle",
+"position": Vector2( 50, 53 ),
+"type": "animation"
+}, {
+"blend": 0.0,
+"filter": [  ],
+"id": "Idle_Run",
+"position": Vector2( 213, 83 ),
+"type": "blend2"
+} ]
+}
+
+[node name="Footstep" parent="Navigation/Enemy1" index="7"]
+max_db = 6.0
+
 [node name="Path1" parent="Navigation" instance=ExtResource( 11 )]
 
 [node name="WP1" parent="Navigation/Path1" index="0"]
@@ -279,6 +312,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 23, 0.5, -2.159 )
 
 [node name="Exit" type="Area" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.96766, 0, 27.1226 )
+collision_layer = 0
 collision_mask = 2
 
 [node name="CollisionShape" type="CollisionShape" parent="Exit"]
@@ -346,12 +380,15 @@ __meta__ = {
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 15 )
+volume_db = -12.0
 autoplay = true
 [connection signal="body_entered" from="Exit" to="Character" method="_on_Exit_body_entered"]
 [connection signal="pressed" from="RestartButton" to="Character" method="_on_RestartButton_pressed"]
 [connection signal="pressed" from="StartButton" to="Character" method="_on_StartButton_pressed"]
 
 [editable path="Character"]
+
+[editable path="Navigation/Enemy1"]
 
 [editable path="Navigation/Path1"]
 

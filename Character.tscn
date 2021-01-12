@@ -286,17 +286,17 @@ data = {
 "position": Vector2( 53, 168 ),
 "type": "animation"
 }, {
-"blend": 0.0,
-"filter": [  ],
-"id": "Idle_Run",
-"position": Vector2( 213, 83 ),
-"type": "blend2"
-}, {
 "animation": ExtResource( 4 ),
 "filter": [  ],
 "id": "Idle",
 "position": Vector2( 50, 53 ),
 "type": "animation"
+}, {
+"blend": 0.0,
+"filter": [  ],
+"id": "Idle_Run",
+"position": Vector2( 213, 83 ),
+"type": "blend2"
 } ]
 }
 
@@ -305,5 +305,6 @@ wait_time = 0.1
 
 [node name="Footstep" type="AudioStreamPlayer3D" parent="." index="6"]
 stream = ExtResource( 6 )
+unit_db = -12.0
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 [connection signal="finished" from="Footstep" to="." method="_on_Footstep_finished"]
