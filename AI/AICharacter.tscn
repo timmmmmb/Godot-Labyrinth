@@ -287,17 +287,17 @@ data = {
 "position": Vector2( 53, 168 ),
 "type": "animation"
 }, {
-"animation": ExtResource( 4 ),
-"filter": [  ],
-"id": "Idle",
-"position": Vector2( 50, 53 ),
-"type": "animation"
-}, {
 "blend": 0.0,
 "filter": [  ],
 "id": "Idle_Run",
 "position": Vector2( 213, 83 ),
 "type": "blend2"
+}, {
+"animation": ExtResource( 4 ),
+"filter": [  ],
+"id": "Idle",
+"position": Vector2( 50, 53 ),
+"type": "animation"
 } ]
 }
 
@@ -328,3 +328,4 @@ stream = ExtResource( 5 )
 [connection signal="body_exited" from="Vision" to="." method="_on_Area_body_exited"]
 [connection signal="body_shape_entered" from="Vision" to="." method="_on_Area_body_shape_entered"]
 [connection signal="body_entered" from="CatchArea" to="." method="_on_CatchArea_body_entered"]
+[connection signal="finished" from="Footstep" to="." method="_on_Footstep_finished"]
