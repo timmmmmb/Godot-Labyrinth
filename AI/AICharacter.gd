@@ -11,6 +11,9 @@ export var patrolSpeed = 2.0
 export var chaseSpeed = 4.0
 export var max_speed = 4.0
 
+onready var footstep = $Footstep
+var footstep_on = false
+
 enum {
 	IDLE,
 	PATROL,
@@ -80,6 +83,9 @@ func move_on_path(speed):
 			look_at(path[path_node], Vector3.UP)
 			rotate_object_local(Vector3(0,1,0), PI)
 			move_and_slide(direction.normalized() * speed, Vector3.UP)
+			if !footstep_on:
+				footstep.play()
+				footstep_on = true
 
 func set_path_to(point):
 	path = nav.get_simple_path(get_global_transform().origin, point)
@@ -100,3 +106,7 @@ func _on_Timer_timeout():
 		wait_time = wait_time - timer.wait_time
 	if state == CHASE:	
 		set_path_to(target.get_global_transform().origin)
+
+
+func _on_Footstep_finished():
+	footstep_on = false

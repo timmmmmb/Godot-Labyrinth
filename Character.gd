@@ -15,6 +15,9 @@ onready var timer = $Timer
 export var text_display_time = 2
 var display_time = 0
 
+onready var footstep = $Footstep
+var footstep_on = false
+
 const SPEED = 6
 const ACCELERATION = 3
 const DE_ACCELERATION = 5
@@ -86,6 +89,10 @@ func _physics_process(delta):
 		
 		char_rot.y = angle
 		character.set_rotation(char_rot)
+		
+		if !footstep_on:
+			footstep.play()
+			footstep_on = true
 	
 	var speed = hv.length() / SPEED
 	
@@ -117,4 +124,7 @@ func _on_Timer_timeout():
 		timer.stop()
 	else:
 		display_time -= timer.wait_time
+		
+func _on_Footstep_finished():
+	footstep_on = false
 	
