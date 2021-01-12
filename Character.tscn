@@ -5,7 +5,7 @@
 [ext_resource path="res://matLowPoly.material" type="Material" id=3]
 [ext_resource path="res://Idle-loop.anim" type="Animation" id=4]
 [ext_resource path="res://Character.gd" type="Script" id=5]
-[ext_resource path="res://Audio/Footsteps/Footstep_Dirt_00.wav" type="AudioStream" id=6]
+[ext_resource path="res://Audio/Footsteps/Footstep_Dirt_01.wav" type="AudioStream" id=6]
 
 [sub_resource type="Environment" id=1]
 
@@ -305,7 +305,4 @@ wait_time = 0.1
 
 [node name="Footstep" type="AudioStreamPlayer3D" parent="." index="6"]
 stream = ExtResource( 6 )
-unit_db = 2.0
-max_db = 5.0
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
-[connection signal="finished" from="Footstep" to="." method="_on_Footstep_finished"]

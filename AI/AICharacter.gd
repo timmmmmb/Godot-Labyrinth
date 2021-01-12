@@ -79,10 +79,6 @@ func move_on_path(speed):
 	if path_node < path.size():
 		var direction = (path[path_node] - get_global_transform().origin)
 		if state == CHASE:
-			print(path_node)
-			print(str("Path: ", path[path_node], "Self: ", get_global_transform().origin))
-			print(direction)
-			print(direction.length())
 		if direction.length() < .5:
 			path_node += 1
 		else:
