@@ -5,7 +5,11 @@
 [ext_resource path="res://matLowPoly.material" type="Material" id=3]
 [ext_resource path="res://Idle-loop.anim" type="Animation" id=4]
 [ext_resource path="res://Character.gd" type="Script" id=5]
-[ext_resource path="res://Audio/Footsteps/Footstep_Dirt_01.wav" type="AudioStream" id=6]
+[ext_resource path="res://assets/Audio/Footstep.wav" type="AudioStream" id=6]
+
+
+
+
 
 [sub_resource type="Environment" id=1]
 

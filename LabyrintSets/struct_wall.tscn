@@ -1,9 +1,11 @@
 [gd_scene load_steps=11 format=2]
 
-[ext_resource path="res://addons/dungeon_collection_2/struct_wall_straight_base.obj" type="ArrayMesh" id=1]
-[ext_resource path="res://addons/dungeon_collection_2/struct_wall_straight_topper.obj" type="ArrayMesh" id=2]
-[ext_resource path="res://addons/dungeon_collection_2/struct_wall_straight_top.obj" type="ArrayMesh" id=3]
-[ext_resource path="res://addons/dungeon_collection_2/struct_wall_straight_main.obj" type="ArrayMesh" id=4]
+[ext_resource path="res://assets/dungeon_assets/struct_wall_straight_base.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://assets/dungeon_assets/struct_wall_straight_topper.obj" type="ArrayMesh" id=2]
+[ext_resource path="res://assets/dungeon_assets/struct_wall_straight_top.obj" type="ArrayMesh" id=3]
+[ext_resource path="res://assets/dungeon_assets/struct_wall_straight_main.obj" type="ArrayMesh" id=4]
+
+
 
 [sub_resource type="ConcavePolygonShape" id=1]
 data = PoolVector3Array( 0.5, 0, -0.7, 0.5, 0.15, -0.7, -0.5, 0.15, -0.7, -0.5, 0, -0.7, 0.5, 0, -0.7, -0.5, 0.15, -0.7, 0.5, 0.15, -0.3, 0.5, 0.2, -0.35, 0.5, 0, -0.3, 0.5, 0, -0.3, 0.5, 0.2, -0.65, 0.5, 0, -0.7, 0.5, 0.15, -0.7, 0.5, 0, -0.7, 0.5, 0.2, -0.65, 0.5, 0.2, -0.35, 0.5, 0.2, -0.65, 0.5, 0, -0.3, -0.5, 0.2, -0.35, -0.5, 0.2, -0.65, 0.5, 0.2, -0.35, 0.5, 0.2, -0.35, -0.5, 0.2, -0.65, 0.5, 0.2, -0.65, -0.5, 0, -0.3, -0.5, 0.15, -0.3, 0.5, 0, -0.3, 0.5, 0, -0.3, -0.5, 0.15, -0.3, 0.5, 0.15, -0.3, -0.5, 0.15, -0.3, -0.5, 0.2, -0.35, 0.5, 0.15, -0.3, 0.5, 0.15, -0.3, -0.5, 0.2, -0.35, 0.5, 0.2, -0.35, 0.5, 0.15, -0.7, 0.5, 0.2, -0.65, -0.5, 0.2, -0.65, -0.5, 0.15, -0.7, 0.5, 0.15, -0.7, -0.5, 0.2, -0.65, -0.5, 0.15, -0.3, -0.5, 0, -0.3, -0.5, 0.2, -0.35, -0.5, 0.2, -0.65, -0.5, 0, -0.3, -0.5, 0, -0.7, -0.5, 0.15, -0.7, -0.5, 0.2, -0.65, -0.5, 0, -0.7, -0.5, 0.2, -0.35, -0.5, 0, -0.3, -0.5, 0.2, -0.65, 0.5, 0, -0.3, 0.5, 0, -0.7, -0.5, 0, -0.7, -0.5, 0, -0.3, 0.5, 0, -0.3, -0.5, 0, -0.7 )

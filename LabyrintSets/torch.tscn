@@ -1,8 +1,11 @@
 [gd_scene load_steps=15 format=2]
 
-[ext_resource path="res://addons/kenney_particle_pack/fire_01.png" type="Texture" id=1]
-[ext_resource path="res://addons/kenney_particle_pack/smoke_04.png" type="Texture" id=2]
-[ext_resource path="res://addons/dungeon_collection_2/prop_wall_torch.obj" type="ArrayMesh" id=3]
+[ext_resource path="res://assets/particles/fire_01.png" type="Texture" id=1]
+[ext_resource path="res://assets/particles/smoke_04.png" type="Texture" id=2]
+[ext_resource path="res://assets/dungeon_assets/prop_wall_torch.obj" type="ArrayMesh" id=3]
+
+
+
 
 [sub_resource type="SpatialMaterial" id=1]
 flags_unshaded = true

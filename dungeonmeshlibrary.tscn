@@ -1,8 +1,10 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://addons/dungeon_collection_2/struct_wall_straight_main.obj" type="ArrayMesh" id=58]
-[ext_resource path="res://addons/dungeon_collection_2/struct_floor_normal.obj" type="ArrayMesh" id=72]
-[ext_resource path="res://addons/dungeon_collection_2/struct_wall_joint_main.obj" type="ArrayMesh" id=89]
+[ext_resource path="res://assets/dungeon_assets/struct_wall_straight_main.obj" type="ArrayMesh" id=58]
+[ext_resource path="res://assets/dungeon_assets/struct_floor_normal.obj" type="ArrayMesh" id=72]
+[ext_resource path="res://assets/dungeon_assets/struct_wall_joint_main.obj" type="ArrayMesh" id=89]
+
+
 
 [sub_resource type="ConcavePolygonShape" id=5]
 data = PoolVector3Array( 0.5, 0, -0.5, -0.5, 0, -0.5, -0.5, -0.2, -0.5, 0.5, -0.2, -0.5, 0.5, 0, -0.5, -0.5, -0.2, -0.5, -0.5, 0, 0.5, -0.5, 0, -0.5, 0.5, 0, 0.5, 0.5, 0, 0.5, -0.5, 0, -0.5, 0.5, 0, -0.5, -0.5, 0, 0.5, 0.5, 0, 0.5, 0.5, -0.2, 0.5, -0.5, -0.2, 0.5, -0.5, 0, 0.5, 0.5, -0.2, 0.5, -0.5, 0, -0.5, -0.5, 0, 0.5, -0.5, -0.2, 0.5, -0.5, -0.2, -0.5, -0.5, 0, -0.5, -0.5, -0.2, 0.5, 0.5, -0.2, 0.5, 0.5, -0.2, -0.5, -0.5, -0.2, -0.5, -0.5, -0.2, 0.5, 0.5, -0.2, 0.5, -0.5, -0.2, -0.5, 0.5, 0, 0.5, 0.5, 0, -0.5, 0.5, -0.2, -0.5, 0.5, -0.2, 0.5, 0.5, 0, 0.5, 0.5, -0.2, -0.5 )
